@@ -1,0 +1,21 @@
+title: Abhay P. Singh
+email: abhaypratapsingh258@gmail.com
+description: Software engineer writing about systems, code, and things I find interesting.
+baseurl: ""
+url: "https://abhayps.com"
+twitter_username: abhayptp
+github_username: abhayptp
+
+# Build settings
+plugins:
+  - jekyll-feed
+
+# Syntax highlighting
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: "highlight"
+    block:
+      line_numbers: false

@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="home-intro">
+    <p>{{ site.description }}</p>
+  </div>
+
+  {% if site.posts.size > 0 %}
+  <div class="post-list">
+    {% for post in site.posts %}
+    <article class="post-item">
+      <time class="post-date" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+        {{ post.date | date: "%Y-%m-%d" }}
+      </time>
+      <h2 class="post-title">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+    </article>
+    {% endfor %}
+  </div>
+  {% else %}
+  <p class="muted">No posts yet.</p>
+  {% endif %}
+</div>
